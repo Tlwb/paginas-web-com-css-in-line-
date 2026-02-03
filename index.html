@@ -1,0 +1,303 @@
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Leopardo-das-Neves | Panthera uncia</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --azul-escuro: #0e1a25;
+      --azul-montanha: #1c2f3f;
+      --cinza-neve: #f2f4f6;
+      --vidro: rgba(255,255,255,0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(180deg, var(--cinza-neve), var(--azul-montanha));
+      color: var(--cinza-neve);
+    }
+
+    header {
+      height: 100vh;
+      background: url("https://upload.wikimedia.org/wikipedia/commons/0/0f/Irbis4.JPG") center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: center;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.55);
+    }
+
+    header h1 {
+      position: relative;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+    }
+
+    section {
+      padding: 90px 10%;
+    }
+
+    .glass {
+      background: var(--vidro);
+      backdrop-filter: blur(12px);
+      border-radius: 22px;
+      padding: 45px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* ===== GALERIA ===== */
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .foto {
+      height: 240px;
+      border-radius: 22px;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.45);
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .foto:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 35px 80px rgba(0,0,0,0.6);
+    }
+
+    .foto img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ===== MODAL IMAGEM ===== */
+
+    #modalImagem {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.92);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    #modalImagem img {
+      max-width: 92%;
+      max-height: 92%;
+      border-radius: 18px;
+    }
+
+    /* ===== VIDEO ===== */
+
+    .video {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+
+    iframe {
+      width: 80%;
+      height: 450px;
+      border-radius: 20px;
+      border: none;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+    }
+
+    /* ===== FOOTER ===== */
+
+    footer {
+      width: 100%;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(180deg, #0e1a25, #1c2f3f);
+    }
+
+    footer p {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 768px) {
+      iframe {
+        width: 100%;
+        height: 260px;
+      }
+    }
+    header {
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("leopardo header.jpg")
+    center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Leopardo das Neves</h1>
+  </header>
+
+  <section>
+    <div class="glass">
+      <h2>Sobre a espécie</h2>
+      <p>
+        O leopardo-das-neves é um felino raro que habita as montanhas da Ásia Central.
+        Adaptado a climas extremos, possui pelagem espessa, cauda longa para equilíbrio
+        e movimentos silenciosos entre rochas e neve.
+      </p>
+    </div>
+  </section>
+<section>
+  <div class="glass">
+    <h2>Curiosidades sobre o Leopardo-das-Neves</h2>
+
+    <p>
+      🐆 <strong>Mestre do camuflado:</strong> sua pelagem manchada se confunde
+      perfeitamente com rochas e sombras das montanhas, tornando-o quase invisível
+      na neve.
+    </p>
+
+    <p>
+      ❄️ <strong>Feito para o frio:</strong> possui patas largas e peludas que
+      funcionam como “raquetes naturais”, evitando que afunde na neve profunda.
+    </p>
+
+    <p>
+      🏔️ <strong>Saltos impressionantes:</strong> pode saltar até 15 metros de
+      distância, usando sua longa cauda para manter o equilíbrio no ar.
+    </p>
+
+    <p>
+      🔇 <strong>O felino silencioso:</strong> diferente de outros grandes felinos,
+      o leopardo-das-neves não ruge. Ele se comunica por sons suaves e discretos.
+    </p>
+
+    <p>
+      🌍 <strong>Espécie ameaçada:</strong> estima-se que existam menos de 7 mil
+      indivíduos na natureza, devido à caça ilegal e à perda de habitat.
+    </p>
+  </div>
+</section>
+
+  <section>
+    <h2>Galeria</h2>
+
+    <div class="galeria">
+      <div class="foto">
+        <img src="leopardo das neves prime.jpg">
+      </div>
+
+      <div class="foto">
+        <img src="leopardo das neves vista de frente.jpg">
+      </div>
+
+      <div class="foto">
+        <img src="leopardo das neves vista perfil.jpg">
+      </div>
+
+      <div class="foto">
+        <img src="leopardo das neves de reh.jpg">
+      </div>
+    </div>
+  </section>
+
+<section>
+  <div class="glass" style="text-align:center;">
+    <h2>Vídeo recomendado</h2>
+
+    <p>
+      Quer ver o leopardo-das-neves em seu habitat natural?
+      Assista ao documentário completo no YouTube.
+    </p>
+
+    <a 
+      href="https://www.youtube.com/watch?v=PV15ijIAmDw"
+      target="_blank"
+      style="
+        display: inline-block;
+        margin-top: 25px;
+        padding: 14px 32px;
+        border-radius: 30px;
+        background: #1da1f2;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+      "
+    >
+      ▶ Assistir no YouTube
+    </a>
+  </div>
+</section>
+
+
+  <footer>
+    <p>© Todos os direitos reservados, Heitor, 2026</p>
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modalImagem">
+    <img id="imagemModal">
+  </div>
+
+  <script>
+    const fotos = document.querySelectorAll(".foto img");
+    const modal = document.getElementById("modalImagem");
+    const modalImg = document.getElementById("imagemModal");
+
+    fotos.forEach(foto => {
+      foto.addEventListener("click", () => {
+        modalImg.src = foto.src;
+        modal.style.display = "flex";
+      });
+    });
+
+    modal.addEventListener("click", () => {
+      modal.style.display = "none";
+      modalImg.src = "";
+    });
+  </script>
+
+</body>
+</html>
